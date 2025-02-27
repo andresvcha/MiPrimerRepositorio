@@ -1,8 +1,17 @@
 name: Mi primer Workflow
 on: [push]
 jobs:
-  MiPrimerJobs:
+  job1:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir un mensaje
-        run: echo "¡Hola, Mundo!"
+        run: echo "Hola, este es el PRIMER mensaje del job1."
+      - name: Imprimir un mensaje
+        run: echo "Hola, este es el SEGUNDO mensaje del job1."
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir un mensaje
+        run: echo "Hola, este es el PRIMER mensaje del job2."
+      - name: Imprimir un mensaje
+        run: echo "Hola, este es el SEGUNDO mensaje del job2."
