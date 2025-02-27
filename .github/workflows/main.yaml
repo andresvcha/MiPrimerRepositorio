@@ -1,0 +1,8 @@
+name: Mi primer Workflow
+on: [push]
+jobs:
+  MiPrimerJobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir un mensaje
+      run: echo "¡Hola, Mundo!"
