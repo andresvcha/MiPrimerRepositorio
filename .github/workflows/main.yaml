@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir 1er mensaje 
-        run: echo "Hola, este es el PRIMER step del job1."
+        run: echo "Hola mundo, este es el PRIMER step del job1."
       - name: Imprimir 2ndo mensaje
-        run: echo "Hola, este es el SEGUNDO step del job1."
+        run: echo "Hola mundo, este es el SEGUNDO step del job1."
   job2:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir 1er mensaje
-        run: echo "Hola, este es el PRIMER step del job2."
+        run: echo "Hola mundo, este es el PRIMER step del job2."
       - name: Imprimir 2ndo mensaje
-        run: echo "Hola, este es el SEGUNDO step del job2."
+        run: echo "Hola mundo, este es el SEGUNDO step del job2."
