@@ -15,3 +15,16 @@ jobs:
         run: echo "Hola, este es el PRIMER step del job2."
       - name: Imprimir 2ndo mensaje
         run: echo "Hola, este es el SEGUNDO step del job2."
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Mostrar variables de entorno"
+        run: |
+          echo  "Este es el valor de platform: ${{env.platform}}"
+          echo  "Este es el valor de region: ${{env.region}}"
+          echo "Este es el valor de account: ${{env.account}}"
+      - name: "Mostrando variables por defecto"
+        run: |
+          echo "Evento: ${{toJSON(github.event)}}"
+          echo "Github_Actor: $GITHUB_ACTOR"
+          echo "Github_Repository: $GITHUB_REPOSITORY" 
